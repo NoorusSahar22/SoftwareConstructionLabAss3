@@ -1,5 +1,5 @@
 import re
-
+#im iqra fareed
 def identifier(user):
     rgx=r"^[a-zA-Z_]+(_)[a-zA-Z0-9]$"
     flg=re.match(rgx, user)
@@ -8,7 +8,7 @@ def identifier(user):
     else:
         res="NOT a Identifier."
     return res
-
+ # its checking an identifier
 def digit(user):
     rgx=r"^[0-9]+$"
     flg=re.match(rgx, user)
@@ -17,7 +17,7 @@ def digit(user):
     else:
         res="NOT a Digit."
     return res
-
+# its checking an Digit
 def statement(user):
     rgx=r"^(int|float|string)\s+[a-zA-Z]+[0-9]\s(=|==|!=|<=|>=|<|>)\s*[a-zA-Z0-9]+;$"
     flg=re.match(rgx, user)
@@ -26,7 +26,7 @@ def statement(user):
     else:
         res="NOT a Statement."
     return res
-
+# its checking an Statement
 def operator(user):
     rgx=r"(&&|\|\|)"
     flg=re.match(rgx, user)
